@@ -1,3 +1,9 @@
+fcopy
+fcopy_byte
+
+.vscode/
+*.bin
+*.log
 # Prerequisites
 *.d
 
