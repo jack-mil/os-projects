@@ -1,0 +1,14 @@
+[Feb 9 22:02] jackmil: Loading Simple Kernel Module
+[  +0.000003] jackmil: Five birthdays added
+[  +0.000001] jackmil: Birthday 2001-1-30 found.
+[  +0.000001] jackmil: Birthday 2008-6-25 found.
+[  +0.000000] jackmil: Birthday 2014-5-18 found.
+[  +0.000000] jackmil: Birthday 1969-7-20 found.
+[  +0.000001] jackmil: Birthday 1970-1-1 found.
+[  +0.000000] jackmil: Simple Module Loaded Successfully
+[ +29.142393] jackmil: Begin Removing Simple Kernel Module
+[  +0.000003] jackmil: Deleting Birthday 2001-1-30.
+[  +0.000001] jackmil: Deleting Birthday 2008-6-25.
+[  +0.000001] jackmil: Deleting Birthday 2014-5-18.
+[  +0.000001] jackmil: Deleting Birthday 1969-7-20.
+[  +0.000000] jackmil: Deleting Birthday 1970-1-1.
