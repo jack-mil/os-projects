@@ -17,7 +17,9 @@
 #ifndef LIST_SEARCHER_HEADER
 #define LIST_SEARCHER_HEADER
 
-// Function Prototypes
+/* Find the largest integer in an array, using multiple child processes
+   to split of the load. Segment the array into the specified number of children
+   as evenly as possible  */
 void searchIntegerList(int list[], int nbrOfListEntries, int childrenCount);
 
 #endif

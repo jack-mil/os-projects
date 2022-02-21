@@ -25,7 +25,7 @@
 #include <time.h>
 #include <unistd.h>
 
-#include "listSearcher.h" // This is the header file for student5.c
+#include "listSearcher.h"  // This is the header file for student5.c
 
 #define LARGEST_ALLOWABLE_INTEGER 255
 #define MIN_CHILDREN 1
@@ -57,7 +57,7 @@ int main(int argc, char *argv[]) {
         printf("   <#entries> - the number of entries in the list ranging from %d to %d\n",
                MIN_ENTRIES, MAX_ENTRIES);
         exit(1);
-    } // End if
+    }  // End if
 
     printf("\n(Parent) Starting the maximum integer detection program (Process ID: %d)\n",
            getpid());
@@ -80,7 +80,7 @@ int main(int argc, char *argv[]) {
     printf("\n(Parent) Ending the maximum integer detection program \n");
 
     return 0;
-} // End main
+}  // End main
 
 // ################################################################
 int parseCommandLine(int argc, char *argv[], int *nbrOfChildrenPtr, int *nbrOfListEntriesPtr) {
@@ -94,7 +94,7 @@ int parseCommandLine(int argc, char *argv[], int *nbrOfChildrenPtr, int *nbrOfLi
 
     if ((childrenCount < MIN_CHILDREN) || (childrenCount > MAX_CHILDREN)) {
         return FALSE;
-    } // End if
+    }  // End if
     else
         *nbrOfChildrenPtr = childrenCount;
 
@@ -102,19 +102,19 @@ int parseCommandLine(int argc, char *argv[], int *nbrOfChildrenPtr, int *nbrOfLi
 
     if ((entryCount < MIN_ENTRIES) || (entryCount > MAX_ENTRIES)) {
         return FALSE;
-    } // End if
+    }  // End if
     else
         *nbrOfListEntriesPtr = entryCount;
 
     return TRUE;
-} // End parseCommandLine
+}  // End parseCommandLine
 
 // ################################################################
 void generateListEntries(int list[], int nbrOfListEntries) {
     int i;
     int maxValue = 0;
 
-    srand(time(NULL)); // Seed the random number generator
+    srand(time(NULL));  // Seed the random number generator
 
     // Fill the integer array with randomly-generated positive integers. In
     // doing so, ensure that no value exceeds the largest allowable integer value
@@ -125,12 +125,12 @@ void generateListEntries(int list[], int nbrOfListEntries) {
         // maximum integer value found by the children
         if (list[i] > maxValue)
             maxValue = list[i];
-    } // End for
+    }  // End for
 
     printf("\n(Parent) Filled the list with %d random entries (Maximum value is %d)\n",
            nbrOfListEntries, maxValue);
 
-} // End generateListEntries
+}  // End generateListEntries
 
 // Collect child process exit codes (largest integer found by child)
 // and return the overall maximum value
@@ -163,7 +163,7 @@ int compareResponsesFromChildren(void) {
                     processID);
             exit(1);
         }
-    } // End while
+    }  // End while
 
     return maxValue;
-} // End compareResponsesFromChildren
+}  // End compareResponsesFromChildren

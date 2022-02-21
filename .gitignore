@@ -1,5 +1,7 @@
 fcopy
 fcopy_byte
+int-search
+sample-runs.txt
 
 .vscode/
 *.bin

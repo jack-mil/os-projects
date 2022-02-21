@@ -22,29 +22,30 @@
 #include "listSearcher.h"
 
 /* Given a list of integers and a range to search,
- * return the largest integer in the range */
+   return the largest integer in the range  */
 static int findMaxInteger(int list[], int startingIndex, int numbrOfEntries);
 
-// ################################################################
+/* Find the largest integer in an array, using multiple child processes
+   to split of the load. Segment the array into the specified number of children
+   as evenly as possible  */
 void searchIntegerList(int list[], int nbrOfListEntries, int childrenCount) {
     int start = 0;
+    // Divide the size of array across the children
     int pool_size = nbrOfListEntries / childrenCount;
 
     // Create the required number of children
     for (size_t i = 0; i < childrenCount; i++) {
-
         pid_t pid = fork();
 
-        // fork() returns negative if error occurred
-        if (pid < 0) {
+        if (pid < 0) {  // fork() returns negative if error occurred
             fprintf(stderr, "Fork operation failed");
-        } else if (pid == 0) { // Child proccess code
+        } else if (pid == 0) {  // Child process code
             // In each child process, find the largest integer in subgroup
             int max = findMaxInteger(list, start, pool_size);
-            printf("(Child process #%d) Searching indexes %d through %d ...\n",
+            printf("\n(Child process #%d) Searching indexes %d through %d ...\n",
                    getpid(), start, start + pool_size);
             exit(max);
-        } else { // Parent proccess code
+        } else {  // Parent process code
             // Update starting index for next child
             start += pool_size;
             // For the last child, ensure that all remaining integers are searched
@@ -56,18 +57,18 @@ void searchIntegerList(int list[], int nbrOfListEntries, int childrenCount) {
         }
     }
 
-} // End searchIntegerList
+}  // End searchIntegerList
 
-
+/* Given a list of integers and a range to search,
+   return the largest integer in the range  */
 static int findMaxInteger(int list[], int startingIndex, int nbrOfEntries) {
-
-    size_t end = startingIndex + nbrOfEntries;
     int maxValue = 0;
-    for (size_t i = startingIndex; i < end; i++) {
+    // Loop through the specified range of indices and determine the largest value
+    for (size_t i = startingIndex; i < startingIndex + nbrOfEntries; i++) {
         if (list[i] > maxValue) {
             maxValue = list[i];
         }
     }
 
     return maxValue;
-} // End findMaxInteger
+}  // End findMaxInteger
