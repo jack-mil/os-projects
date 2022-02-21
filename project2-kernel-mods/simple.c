@@ -24,7 +24,7 @@ int days[] = {30, 25, 18, 20, 1};
 int months[] = {1, 6, 5, 7, 1};
 int years[] = {2001, 2008, 2014, 1969, 1970};
 
-// Birthday structure using linux kernel linked list structure
+// Birthday structure using Linux kernel linked list structure
 struct birthday {
 	int day;
 	int month;
@@ -74,7 +74,7 @@ void simple_exit(void) {
 
 	struct birthday *elem, *next;
 
-	// Iterate throught the list elements and unlink them from the structure,
+	// Iterate through the list elements and unlink them from the structure,
 	// Also free the kernel memory
 	list_for_each_entry_safe(elem, next, &birthday_list, list) {
 		printk("jackmil: Deleting Birthday %d-%d-%d.", elem->year, elem->month,
