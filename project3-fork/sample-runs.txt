@@ -1,0 +1,142 @@
+C:\Temp>a.exe 1 100
+
+(Parent) Starting the maximum integer detection program (Process ID: 712)
+
+(Parent) Filled the list with 100 random entries (Maximum value is 254)
+
+(Parent) Began searching the list using 1 child process
+
+(Child process #2960) Searching indexes 0 through 99 ...
+
+(Parent) Received 254 from child process #2960
+
+(Parent) The maximum integer found by the children was 254
+
+(Parent) Ending the maximum integer detection program
+
+
+C:\Temp>a.exe 6 148
+
+(Parent) Starting the maximum integer detection program (Process ID: 5024)
+
+(Parent) Filled the list with 148 random entries (Maximum value is 252)
+
+(Parent) Began searching the list using 6 child processes
+
+(Child process #4692) Searching indexes 0 through 23 ...
+
+(Child process #4872) Searching indexes 24 through 47 ...
+
+(Child process #3456) Searching indexes 48 through 71 ...
+
+(Child process #3616) Searching indexes 72 through 95 ...
+
+(Child process #3428) Searching indexes 96 through 119 ...
+
+(Child process #316) Searching indexes 120 through 147 ...
+
+(Parent) Received 244 from child process #4692
+
+(Parent) Received 243 from child process #4872
+
+(Parent) Received 252 from child process #3428
+
+(Parent) Received 239 from child process #316
+
+(Parent) Received 252 from child process #3456
+
+(Parent) Received 231 from child process #3616
+
+(Parent) The maximum integer found by the children was 252
+
+(Parent) Ending the maximum integer detection program
+
+
+C:\Temp>a.exe 19 9993
+
+(Parent) Starting the maximum integer detection program (Process ID: 3972)
+
+(Parent) Filled the list with 9993 random entries (Maximum value is 255)
+
+(Parent) Began searching the list using 19 child processes
+
+(Child process #3852) Searching indexes 0 through 524 ...
+
+(Child process #3740) Searching indexes 525 through 1049 ...
+
+(Child process #2936) Searching indexes 1050 through 1574 ...
+
+(Child process #2092) Searching indexes 1575 through 2099 ...
+
+(Child process #3504) Searching indexes 2100 through 2624 ...
+
+(Child process #1192) Searching indexes 2625 through 3149 ...
+
+(Child process #2004) Searching indexes 3150 through 3674 ...
+
+(Child process #4796) Searching indexes 3675 through 4199 ...
+
+(Child process #3944) Searching indexes 4200 through 4724 ...
+
+(Child process #1776) Searching indexes 4725 through 5249 ...
+
+(Child process #5108) Searching indexes 5250 through 5774 ...
+
+(Child process #2560) Searching indexes 5775 through 6299 ...
+
+(Child process #1060) Searching indexes 6300 through 6824 ...
+
+(Child process #1764) Searching indexes 6825 through 7349 ...
+
+(Child process #1184) Searching indexes 7350 through 7874 ...
+
+(Child process #1336) Searching indexes 7875 through 8399 ...
+
+(Child process #5016) Searching indexes 8400 through 8924 ...
+
+(Child process #5092) Searching indexes 8925 through 9449 ...
+
+(Child process #4336) Searching indexes 9450 through 9992 ...
+
+(Parent) Received 255 from child process #3852
+
+(Parent) Received 255 from child process #3740
+
+(Parent) Received 255 from child process #4336
+
+(Parent) Received 255 from child process #5016
+
+(Parent) Received 253 from child process #1336
+
+(Parent) Received 255 from child process #1184
+
+(Parent) Received 255 from child process #1764
+
+(Parent) Received 254 from child process #1060
+
+(Parent) Received 255 from child process #2560
+
+(Parent) Received 255 from child process #5108
+
+(Parent) Received 255 from child process #1776
+
+(Parent) Received 255 from child process #3944
+
+(Parent) Received 255 from child process #4796
+
+(Parent) Received 255 from child process #2004
+
+(Parent) Received 255 from child process #1192
+
+(Parent) Received 255 from child process #3504
+
+(Parent) Received 255 from child process #2092
+
+(Parent) Received 255 from child process #2936
+
+(Parent) Received 255 from child process #5092
+
+(Parent) The maximum integer found by the children was 255
+
+(Parent) Ending the maximum integer detection program
+
