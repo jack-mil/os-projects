@@ -8,3 +8,6 @@
    - Learn linked list implementation from Linux Kernel API
 3. Process forking
    - Find the biggest integer in an array to demonstrate using the `fork()` API
+4. Signal Handlers
+   - Override various default signal handlers to gracefully recover from critical errors
+   - Demo of UNIX signals and handlers

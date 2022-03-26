@@ -1,6 +1,7 @@
 fcopy
 fcopy_byte
 int-search
+test-signals
 sample-runs.txt
 
 .vscode/
