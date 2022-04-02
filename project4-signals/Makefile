@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wfloat-equal -Wwrite-strings -O2 -pipe
-OBJ = JacksonMillerSignalHandler.o SignalHandlerDriver.o
-DEPS = signal-handlers.h
+OBJ = handlers.o test-signals.o
+DEPS = handlers.h
 TARGET = test-signals
 
 # Recompile objects when any source or header changes

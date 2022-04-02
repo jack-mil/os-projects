@@ -1,19 +1,13 @@
 /*
- * Student name: Jackson Miller
+ * Student name: jackmil
  * Course: COSC 3503 - Operating Systems
- * Assignment: #4 - POSIX Signals
- * Source Code File name: JacksonMillerSignalHandler.c
- * Program's Purpose: Provides the functionality that searches the list for the
- *          maximum integer value with the help of 1 or more child
- *          processes
- * Program's Limitations: Because a child process can only return a value up
- *       to 255, the largest possible integer in the list cannot exceed 255
- * Development Computer: Lenovo Thinkpad P73
- * Operating System: Arch Linux
- * Compiler: GCC
- * Build Instructions: Makefile provided
- * Program's Operational Status: Complete
+ * Assignment: #5 - Signal Handlers
+ * Source Code File name: handlers.c
+ * Program's Purpose: Defines signal handler functions for various signals
+ *      caught in the driver code
  */
+
+#include "handlers.h"
 
 #include <signal.h>
 #include <stdio.h>
@@ -21,8 +15,6 @@
 #include <string.h>
 #include <sys/wait.h>
 #include <unistd.h>
-
-#include "signal-handlers.h"
 
 void catchABRT(int sigNbr) {
     char msg[] = "\n(SIGABRT) Assertion failed. Program terminating\n";

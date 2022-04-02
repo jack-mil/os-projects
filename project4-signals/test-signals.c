@@ -1,24 +1,13 @@
-///////////////////////////////////////////////////////////////////
-// Student name: Instructor
-// Course: COSC 3503
-// Assignment: #4 - POSIX Signals
-// Source Code File Name: SignalHandlerDriver.c
-// Program's Purpose: Provides the driver that tests the generation, detection,
-//    and handling of various POSIX signals
-// Assumptions:  The program contains statements that intentionally result in
-//    the generation of signals such as alarm notification, floating point
-//    error, segmentation fault, and program abort.  These signals,
-//    when not explicitly handled, cause the program to abnormally terminate
-// Program's Limitations: None known
-//
-// Development Computer: Dell
-// Operating System: Windows 7 using CYGWIN
-// Compiler: Gnu gcc
-// Build Directions: gcc program9-driver.c
-//                     OR
-//                   gcc program9-driver.c student9.c
-// Program's Operational Status: Fulfills the requirements
-///////////////////////////////////////////////////////////////////
+/* Course: COSC 3503
+ * Assignment: #4 - POSIX Signals
+ * Source Code File Name: test-signals.c
+ * Program's Purpose: Provides the driver that tests the generation, detection,
+ *    and handling of various POSIX signals
+ * Assumptions:  The program contains statements that intentionally result in
+ *    the generation of signals such as alarm notification, floating point
+ *    error, segmentation fault, and program abort.  These signals,
+ *    when not explicitly handled, cause the program to abnormally terminate
+ */
 
 #include <assert.h>
 #include <signal.h>
@@ -26,7 +15,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#include "signal-handlers.h"
+#include "handlers.h"
 
 // Constants
 #define FALSE 0
