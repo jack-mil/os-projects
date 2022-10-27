@@ -1,0 +1,82 @@
+Traffic Simulation at a 4-Way Stop Intersection
+-----------------------------------------------
+
+Car #1 has arrived and is waiting with 0 previous cars (STOP)
+Car #2 has arrived and is waiting with 1 previous cars (STOP)
+
+Car #1 is going through the intersection -->
+
+Car #3 has arrived and is waiting with 2 previous cars (STOP)
+Car #4 has arrived and is waiting with 3 previous cars (STOP)
+
+--> Car #1 traversed the intersection in 4 seconds
+
+
+Car #2 is going through the intersection -->
+
+Car #5 has arrived and is waiting with 3 previous cars (STOP)
+
+--> Car #2 traversed the intersection in 4 seconds
+
+
+Car #3 is going through the intersection -->
+
+Car #6 has arrived and is waiting with 3 previous cars (STOP)
+
+--> Car #3 traversed the intersection in 4 seconds
+
+
+Car #4 is going through the intersection -->
+
+Car #7 has arrived and is waiting with 3 previous cars (STOP)
+
+Car #5 is going through the intersection -->
+
+
+--> Car #4 traversed the intersection in 4 seconds
+
+
+--> Car #5 traversed the intersection in 4 seconds
+
+
+Car #6 is going through the intersection -->
+
+Car #8 has arrived and is waiting with 3 previous cars (STOP)
+Car #9 has arrived and is waiting with 3 previous cars (STOP)
+
+--> Car #6 traversed the intersection in 4 seconds
+
+
+Car #7 is going through the intersection -->
+
+Car #10 has arrived and is waiting with 3 previous cars (STOP)
+
+--> Car #7 traversed the intersection in 4 seconds
+
+
+Car #8 is going through the intersection -->
+
+Car #11 has arrived and is waiting with 3 previous cars (STOP)
+
+--> Car #8 traversed the intersection in 4 seconds
+
+
+Car #9 is going through the intersection -->
+
+Car #12 has arrived and is waiting with 3 previous cars (STOP)
+
+--> Car #9 traversed the intersection in 3 seconds
+
+
+Car #10 is going through the intersection -->
+
+
+--> Car #10 traversed the intersection in 3 seconds
+
+
+Car #11 is going through the intersection -->
+
+
+Terminated all of the car creation threads
+
+*** END OF TRAFFIC SIMULATION ***
